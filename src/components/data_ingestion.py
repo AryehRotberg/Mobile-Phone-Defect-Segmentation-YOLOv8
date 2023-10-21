@@ -6,8 +6,8 @@ from zipfile import ZipFile
 
 
 class DataIngestion:
-    def __init__(self, data_directory):
-        self.data_directory = data_directory
+    def __init__(self):
+        self.data_directory = 'data'
 
         with open('config.yaml') as file:
             self.config = yaml.safe_load(file)
