@@ -13,8 +13,6 @@ class ModelTrainer:
             self.config = self.config['model_training']
     
     def train(self):
-        results = self.model.train(data=os.path.join(self.config['data_directory'], 'data.yaml'),
-                                   epochs=100,
-                                   imgsz=640)
-        
-        return results
+        self.model.train(data=os.path.join(self.config['data_directory'], 'data.yaml'),
+                         epochs=100,
+                         imgsz=640)
