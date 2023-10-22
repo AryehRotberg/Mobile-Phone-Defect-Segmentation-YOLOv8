@@ -19,3 +19,5 @@ logging.info('Downloaded roboflow data and updated data directory in config.')
 # Model Training
 model_trainer = ModelTrainer()
 results = model_trainer.train()
+
+logging.info('Completed training model.')

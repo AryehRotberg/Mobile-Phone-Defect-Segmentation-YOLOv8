@@ -1,5 +1,4 @@
 data_ingestion:
-  data_download_url: 'https://app.roboflow.com/ds/0SEyfjIH2b?key=sSYdeFAoCa'
-
+  data_download_url: https://app.roboflow.com/ds/0SEyfjIH2b?key=sSYdeFAoCa
 model_training:
-  data_directory: 'D:/Data Science/Projects/Mobile-Phone-Defect-Segmentation-YOLOv8/data'
+  data_directory: D:/Mobile-Phone-Defect-Segmentation-YOLOv8/data
