@@ -10,3 +10,4 @@ ultralytics
 PyYAML
 opencv-python
 Pillow
+opencv-python-headless
