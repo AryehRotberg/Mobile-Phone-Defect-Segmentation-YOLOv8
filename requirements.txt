@@ -1,0 +1,11 @@
+Pillow==10.1.0
+PyYAML==6.0.1
+setuptools==68.0.0
+streamlit==1.25.0
+ultralytics==8.0.162
+wget==3.2
+torch==2.0.1+cu117
+torchaudio==2.0.2+cu117
+torch
+ultralytics==8.0.162
+PyYAML==6.0
