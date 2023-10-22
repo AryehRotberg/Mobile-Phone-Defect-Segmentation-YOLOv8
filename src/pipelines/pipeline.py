@@ -14,7 +14,7 @@ data_ingestion = DataIngestion()
 data_ingestion.download_roboflow_project()
 data_ingestion.extract_zip_file('Mobile Phone Defect Segmentation.v1i.yolov8.zip')
 
-logging.info('Downloaded roboflow data.')
+logging.info('Downloaded roboflow data and updated data directory in config.')
 
 # Model Training
 model_trainer = ModelTrainer()

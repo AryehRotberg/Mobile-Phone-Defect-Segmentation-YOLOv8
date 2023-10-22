@@ -4,6 +4,8 @@ import wget
 import os
 from zipfile import ZipFile
 
+from src.components.utils import common
+
 
 class DataIngestion:
     def __init__(self):
@@ -21,3 +23,4 @@ class DataIngestion:
             file.extractall(self.data_directory)
         
         os.remove(os.path.join(self.data_directory, zip_file))
+        common().update_model_data_directory()
