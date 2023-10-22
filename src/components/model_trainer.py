@@ -5,7 +5,7 @@ from ultralytics import YOLO
 
 
 class ModelTrainer:
-    def __init__(self) -> None:
+    def __init__(self):
         self.model = YOLO('models/yolov8s-seg.pt')
 
         with open('config.yaml') as file:
