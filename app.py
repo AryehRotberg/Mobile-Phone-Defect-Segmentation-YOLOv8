@@ -3,6 +3,8 @@ import streamlit as st
 from PIL import Image
 from ultralytics import YOLO
 
+import cv2
+
 
 model = YOLO('runs/segment/train/weights/best.pt')
 
@@ -22,5 +24,5 @@ if predict_btn and file:
     
     else:
         st.error(f'⚠️ Detected {num_scratches} scratches.')
-
-    st.image(results[0].plot())
+    
+    st.image(cv2.cvtColor(results[0].plot(), cv2.COLOR_RGB2BGR))

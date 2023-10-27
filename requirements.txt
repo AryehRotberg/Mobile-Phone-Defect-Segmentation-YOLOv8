@@ -10,3 +10,6 @@ ultralytics
 PyYAML
 Pillow
 opencv-python-headless
+uvicorn
+fastapi
+python-multipart
