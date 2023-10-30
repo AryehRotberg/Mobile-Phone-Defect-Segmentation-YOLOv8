@@ -2,6 +2,7 @@ import logging
 
 from src.components.data_ingestion import DataIngestion
 from src.components.model_trainer import ModelTrainer
+from src.components.model_evaluation import ModelEvaluation
 
 
 if __name__ == '__main__':
@@ -11,14 +12,17 @@ if __name__ == '__main__':
                         level=logging.INFO)
 
     # Data Ingestion
-    data_ingestion = DataIngestion()
-    data_ingestion.download_roboflow_project()
-    data_ingestion.extract_zip_file('Mobile Phone Defect Segmentation.v1i.yolov8.zip')
+    # data_ingestion = DataIngestion()
+    # data_ingestion.download_roboflow_project()
+    # data_ingestion.extract_zip_file('Mobile Phone Defect Segmentation.v1i.yolov8.zip')
 
-    logging.info('Downloaded roboflow data and updated data directory in config.')
+    # logging.info('Downloaded roboflow data and updated data directory in config.\n')
 
     # Model Training
-    model_trainer = ModelTrainer()
-    results = model_trainer.train()
+    # model_trainer = ModelTrainer()
+    # model_trainer.train()
 
-    logging.info('Completed training model.')
+    # logging.info('Tuned YOLO model.')
+
+    model_evaluation = ModelEvaluation()
+    logging.info(f'Model Parameters -> \n{model_evaluation.get_parameters()}')

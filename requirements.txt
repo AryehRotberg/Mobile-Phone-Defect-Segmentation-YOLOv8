@@ -13,3 +13,6 @@ opencv-python-headless
 uvicorn
 fastapi
 python-multipart
+optuna
+mlflow
+ray[tune]
