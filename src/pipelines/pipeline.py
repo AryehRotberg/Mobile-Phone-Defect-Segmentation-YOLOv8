@@ -19,10 +19,10 @@ if __name__ == '__main__':
     # logging.info('Downloaded roboflow data and updated data directory in config.\n')
 
     # Model Training
-    # model_trainer = ModelTrainer()
-    # model_trainer.train()
+    model_trainer = ModelTrainer()
+    study = model_trainer.create_optuna_pipeline(n_trials=7)
 
-    # logging.info('Tuned YOLO model.')
+    logging.info(f'Tuned YOLO model. Best Results -> {model_trainer.get_best_study_results(study)}')
 
-    model_evaluation = ModelEvaluation()
-    logging.info(f'Model Parameters -> \n{model_evaluation.get_parameters()}')
+    # model_evaluation = ModelEvaluation()
+    # logging.info(f'Model Parameters -> \n{model_evaluation.get_parameters()}')
