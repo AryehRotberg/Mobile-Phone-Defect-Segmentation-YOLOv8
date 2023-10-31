@@ -6,7 +6,7 @@ from ultralytics import YOLO
 import cv2
 
 
-model = YOLO('runs/segment/train/weights/best.pt')
+model = YOLO('models/production/best.pt')
 
 st.title('Mobile Phone Defect Segmentation')
 file = st.file_uploader('Upload image')

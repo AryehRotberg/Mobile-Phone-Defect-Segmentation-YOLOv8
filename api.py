@@ -9,7 +9,7 @@ from ultralytics import YOLO
 from starlette.responses import StreamingResponse
 
 
-model = YOLO('runs/segment/train/weights/best.pt')
+model = YOLO('models/production/best.pt')
 
 app = FastAPI(title='Mobile Phone Defect Segmentation Using YOLOv8')
 
