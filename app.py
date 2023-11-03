@@ -20,7 +20,7 @@ if predict_btn and file:
     num_scratches = results[0].boxes.cls.tolist().count(0)
 
     if num_scratches == 0:
-        st.info("No scratches detected! You're good to go.")
+        st.info("No scratches detected.")
     
     else:
         st.error(f'⚠️ Detected {num_scratches} scratches.')
