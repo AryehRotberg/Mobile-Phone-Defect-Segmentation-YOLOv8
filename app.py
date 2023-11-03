@@ -6,6 +6,7 @@ from ultralytics import YOLO
 import cv2
 
 
+
 model = YOLO('models/production/best.pt')
 
 st.title('Mobile Phone Defect Segmentation')
