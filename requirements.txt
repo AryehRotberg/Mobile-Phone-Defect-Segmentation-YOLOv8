@@ -16,3 +16,4 @@ python-multipart
 optuna
 mlflow
 ray[tune]
+python-multipart
