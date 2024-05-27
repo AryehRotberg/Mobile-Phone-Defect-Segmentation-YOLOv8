@@ -2,6 +2,8 @@
 
 This repository contains mobile phone defect segmentation app / api. The project utilizes the powerful Ultralytics YOLOv8 model to detect and segment scratches on mobile phone screens from images. It's designed to assist in the quality assurance process of mobile phone manufacturing, providing a quick and accurate assessment of screen conditions.
 
+![project_2_image](https://github.com/AryehRotberg/Mobile-Phone-Defect-Segmentation-YOLOv8/assets/49247848/0bd025e6-30df-419b-9257-3f4aaada4ef2)
+
 ## Technologies Used
 - **Ultralytics YOLOv8**: For real-time object detection and segmentation.
 - **FastAPI**: For building a high-performance API with automatic interactive documentation.
