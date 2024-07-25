@@ -8,6 +8,7 @@ __pycache__/
 
 # Data directory
 data/
+original_data/
 
 # Distribution / packaging
 .Python
